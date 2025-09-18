@@ -21,15 +21,17 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * <li>Restrict access to the application, allowing only logged in users,</li>
  * <li>Set up the login form,</li>
  * <li>Configures the {@link UserDetailsServiceImpl}.</li>
- * 
+ * </ul>
  */
 @EnableWebSecurity
 @Configuration
 public class SecurityConfiguration extends VaadinWebSecurityConfigurerAdapter {
 
 	/**
-	 * The password encoder to use when encrypting passwords.
-	 */
+ * Creates a password encoder bean.
+ *
+ * @return a {@link PasswordEncoder} instance
+ */
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
@@ -53,10 +55,10 @@ public class SecurityConfiguration extends VaadinWebSecurityConfigurerAdapter {
 	}
 
 	/**
-	 * Allows access to static resources, bypassing Spring security.
-	 * 
-	 * @throws Exception
-	 */
+	* Allows access to static resources, bypassing Spring security.
+	* @param http the HttpSecurity object
+	* @throws Exception if something goes wrong
+ 	*/
 	@Override
 	public void configure(WebSecurity web) throws Exception {
 		super.configure(web);
