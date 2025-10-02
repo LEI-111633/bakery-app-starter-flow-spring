@@ -1,3 +1,11 @@
+## Grupo: 
+| Course    | Number   | Name          |
+|-----------|----------|---------------|
+| LEI      | 111633    | Tiago França  |
+| LEI      | 12789    | João Pedro    |
+| LEI      | 13579    | Sara Costa    |
+| LEI      | 13579    | Sara Costa    |
+
 # ⚠️ This starter is not recommended ⚠️
 
 **This starter is not recommended for new Vaadin Flow applications. Instead, visit [start.vaadin.com](https://start.vaadin.com/) to configure and download a Vaadin project that reflects the current best practices.**
