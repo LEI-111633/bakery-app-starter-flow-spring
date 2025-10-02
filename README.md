@@ -1,10 +1,10 @@
 ## Grupo: 
-| Course    | Number   | Name          |
-|-----------|----------|---------------|
-| LEI      | 111633    | Tiago França  |
-| LEI      | 12789    | João Pedro    |
-| LEI      | 13579    | Sara Costa    |
-| LEI      | 13579    | Sara Costa    |
+| Course    | Number   | Name           |
+|----------|-----------|----------------|
+| LEI      | 111633    | Tiago França   |
+| LEI      | 123280    | Rodrigo Santos |
+| LEI      | 123281    | Joana          |
+| LEI      | 123300    | Samuel         |
 
 
 # ⚠️ This starter is not recommended ⚠️
