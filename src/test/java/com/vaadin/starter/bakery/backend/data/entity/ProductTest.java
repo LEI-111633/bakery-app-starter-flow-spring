@@ -6,18 +6,24 @@ import org.junit.Test;
 public class ProductTest {
 
 	@Test
-	public void equalsTest() {
-		Product o1 = new Product();
-		o1.setName("name");
-		o1.setPrice(123);
+    public void equalsTest() {
+        // Cria o primeiro objeto Product e define seus atributos
+        Product o1 = new Product();
+        o1.setName("name");    // nome do produto
+        o1.setPrice(123);      // preço do produto
 
-		Product o2 = new Product();
-		o2.setName("anothername");
-		o2.setPrice(123);
+        // Cria o segundo objeto Product com um nome diferente
+        Product o2 = new Product();
+        o2.setName("anothername"); // diferente de o1
+        o2.setPrice(123);          // mesmo preço de o1
 
-		Assert.assertNotEquals(o1, o2);
+        // Verifica se os dois objetos são diferentes (espera-se true)
+        Assert.assertNotEquals(o1, o2);
 
-		o2.setName("name");
-		Assert.assertEquals(o1, o2);
-	}
+        // Alinha o nome de o2 com o de o1, tornando todos os campos iguais
+        o2.setName("name");
+
+        // Agora os dois objetos devem ser considerados iguais
+        Assert.assertEquals(o1, o2);
+    }
 }
